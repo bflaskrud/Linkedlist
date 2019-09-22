@@ -48,17 +48,16 @@ end
   end
 end
 
-  def reverse_list(list) # LinkedListNode #list is another name for node
-  stack = Stack.new
-
-  while list
-    stack.push(list.value)
-    list = list.next_node
+  def reverse_list(list, previous=nil)
+  new_head = list.next_node
+  list.next_node = previous
+  if new_head
+    reverse_list(new_head, list)
+  else
+    list
   end
-
-  return stack.data
-  end
-
+end
+  
 revlist = reverse_list(node3)
 print_values(revlist)
 
