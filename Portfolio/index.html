@@ -1,0 +1,261 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="prism-atom-dark.css" media="screen">
+
+		<script type="text/javascript" src="prism.js"></script>
+		<script type="text/javascript" src="prism.ruby.js"></script>
+
+    <title>Ben Flaskrud</title>
+    <meta name="description" content="Ben Flaskrud is a professional
+        software engineer specializing in full-stack development.
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.">
+
+	</head>
+
+	<body>
+	   <div class="about-container">
+      <ul>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+        <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+        <li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</a></li>
+      </ul>
+
+		  <div class="about">
+			<img src="me2.jpg" class="me" />
+
+			<h1>Ben Flaskrud</h1>
+
+
+			<h2>SOFTWARE ENGINEER</h2>
+
+			<hr class="grey"/>
+			<p class="bio">
+			Ben Flaskrud is a professional software engineer specializing in full-stack development. He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications. 
+			</p>
+		  </div>
+	  </div>
+
+
+	  <h3 id="code-samples">Code Snippets</h3>
+	  <hr class="yellow">
+
+	  <div class="box">
+	  	<h4>Temperature Conversion</h4>
+	  	<p>
+	  		This Ruby program will prompt the user for a temperature
+    in degrees Celsius and let the user know what the
+    corresponding temperature is in Fahrenheit.
+			</p>
+
+	  </div>
+
+	  <div class="box">
+	  	<pre><code class="language-ruby">
+          puts &quot;Please enter degrees in celsius&quot;
+             celsius = gets
+
+             fah = celsius.to_i * 9/5 + 32
+
+          greeting = &quot;The temperature is #{fah} degrees Fahrenheit.&quot;
+          puts greeting</code></pre>
+	  </div>
+
+	  <br class="clear" />
+<div class="box">
+      <h4>Ordinal Challenge</h4>
+      <p>This Ruby program will convert a plain number
+    to the ordinal of the number. So for example,
+    if the user enters 2, it will display 2nd, if
+    the user enters 3, it will display 3rd, etc.
+      </p>
+    </div>
+
+	  <div class="box">
+	  	<pre><code class="language-ruby">
+            puts &quot;Enter a number&quot;
+            number = gets.chomp.to_i
+    
+            if number % 10 == 1 &amp;&amp; ! 11
+                puts &quot;That's #{number}st place!&quot;
+    
+  
+            elsif number % 10 == 2 &amp;&amp; ! 12
+                puts &quot;That's #{number}nd place!&quot;    
+    
+    
+            elsif number % 10 == 3 &amp;&amp; ! 13
+                puts &quot;That's #{number}rd place!&quot;
+
+    
+            else number
+                puts &quot;That's #{number}th place!&quot;
+    
+            end </code></pre>
+	  </div>
+
+	  <br class="clear" />
+
+	  <div class="box">
+	  	<h4>Foobar</h4>
+	  	<p>This Ruby program is an adaptation of a classic technical
+    interview problem which displays sequences
+    of the Foobar pattern.</p>
+	  </div>
+
+	  <div class="box">
+	  	<pre><code class="language-ruby">
+        puts "How many items do you want to see?"
+          reply = gets.chomp.to_i
+
+          item = []
+
+            (1..reply).each do |n|
+                if n % 3 == 0 && n % 5 == 0
+              puts "FooBar"
+                elsif n % 3 == 0
+              puts "Foo"    
+                elsif n % 5 == 0
+              puts "Bar"
+                else 
+              puts "#{n}"
+              end
+            end
+    
+            puts item </code></pre>
+	  </div>
+
+	  <br class="clear" />
+
+
+    <h3 id="web-apps">Web Apps</h3>
+    <hr class="yellow" />
+
+    <div class="box">
+      <a href="https://splurty-benjamin-flaskrud.herokuapp.com">
+      <h4>Quote Generator</h4>
+      <img src="splurty.png" class="full-width" />
+    </a>
+      <p>
+        A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS.
+        Uses Git and GitHub for version control, and launched
+        on Heroku.
+        <br />
+        <a href="https://github.com/bflaskrud/pipeline">Github Repository</a>
+      </p>
+    </div>
+
+    <div class="box">
+      <a href="https://nomster-ben-flaskrud.herokuapp.com">
+      <h4>Yelp Clone</h4>
+      <img src="nomster.png" class="full-width" />
+    </a>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+        <br />
+        <a href="https://github.com/bflaskrud/nomster">Github Repository</a>
+      </p>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <a href="https://flixter-ben-flaskrud.herokuapp.com">
+      <h4>Two-Sided Market Place</h4>
+      <img src="flixter.png" class="full-width" />
+    </a>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+        <br />
+        <a href="https://github.com/bflaskrud/flixter">Github Repository</a>
+      </p>
+    </div>
+    <div class="box">
+      <a href="https://grammable-ben-flaskrud.herokuapp.com">
+      <h4>Test Driven Development</h4>
+      <img src="grammable.png" class="full-width" />
+    </a>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+        <br />
+        <a href="https://github.com/bflaskrud/grammable">Github Repository</a>
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <a href="https://todo-ben-flaskrud.herokuapp.com">
+      <h4>Single Page Todo Application</h4>
+      <img src="todoster.png" class="full-width" />
+    </a>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that by using JavaScript
+        allows users to rapidly add dynamic content.
+        <br />
+        <a href="https://github.com/bflaskrud/todo">Github Repository</a>
+      </p>
+    </div>
+    <div class="box">
+      <a href="#">
+      <h4>Agile Team Project</h4>
+      <img src="chess.png" class="full-width" />
+    </a>
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+        <br />
+        <a href="#">Github Repository</a>
+      </p>
+    </div>
+    <br class="clear" />
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="yellow" />
+    <p class="skills-and-tools">
+      Ben has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+  <div class="icons">
+    <img src="github.png" class="icon">
+    <img src="rubocop.png" class="icon" />
+    <img src="trello.png" class="icon" />
+    <img src="slack.png" class="icon" />
+    <img src="codeship.png" class="icon" />
+
+    <br class="clear" />
+    <img src="skills.png" class="icon" />
+  </div>
+
+  <div class="contact-me" id="hire-me">
+    <h3 class="contact-headline">Contact</h3>
+    <hr class="yellow" />
+    <p class="contact-info">
+        Currently entertaining new opportunities.
+        Please get in touch via Email, Github, or Linkedin:
+      </p>
+      <p><a href="https://www.linkedin.com/in/ben-flaskrud-837002127/" class="contact-link">Linkedin</a></p>
+      <p><a href="https://github.com/bflaskrud" class="contact-link">GitHub</a></p>
+      <p>
+        <a href="mailto:bflaskrud2@yahoo.com" class="contact-link">
+          bflaskrud2@yahoo.com
+        </a>
+      </p>
+  </div>
+	</body>
+
+</html>
