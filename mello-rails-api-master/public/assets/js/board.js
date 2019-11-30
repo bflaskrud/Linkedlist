@@ -436,6 +436,7 @@ function handleContributorDelete(event) {
 $contributorModalSaveButton.on('click', handleContributorSave);
 $contributorModalButton.on('click', openContributorModal);
 $saveCardButton.on('click', handleCardCreate);
+$saveListButton.on('click', handleListCreate);
 $logoutButton.on('click', handleLogout);
 $editListSaveButton.on('click', handleListEdit);
 $editListDeleteButton.on('click', handleListDelete);
